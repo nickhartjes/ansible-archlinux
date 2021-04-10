@@ -6,6 +6,8 @@ pacman:
     - xorg-xinit
     - base-devel
     - openssh
+    - xf86-video-intel
+    - nvidia
   remove:
     - vi
 git:
