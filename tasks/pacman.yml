@@ -1,0 +1,12 @@
+---
+- include_vars: vars.yml
+- name: Install pacman packages
+  become: yes
+  pacman:
+    state: latest
+    update_cache: true
+    name: "{{ pacman.install }}"
+- name: Remove packages
+  pacman:
+    name: "{{ pacman.remove }}"
+    state: absent

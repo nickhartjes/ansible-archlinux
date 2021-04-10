@@ -1,0 +1,14 @@
+---
+- name: Setup Workstation
+  hosts: localhost
+  become: true
+  gather_facts: true
+
+  vars_files:
+    - vars.yml
+
+  tasks:
+    - include_tasks: tasks/default.yml
+    - include_tasks: tasks/pacman.yml
+    - include_tasks: tasks/git.yml
+    - include_tasks: tasks/gnome.yml

@@ -1,0 +1,13 @@
+username: nh
+home: /home/{{ username }}
+pacman:
+  install:
+    - xorg
+    - xorg-xinit
+    - base-devel
+    - openssh
+  remove:
+    - vi
+git:
+  - repo: https://aur.archlinux.org/yay-git.git
+    dest: /projects/system/yay-git

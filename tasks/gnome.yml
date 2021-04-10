@@ -1,0 +1,14 @@
+---
+- include_vars: vars.yml
+- name: Install Gnome packages
+  become: yes
+  pacman:
+    state: latest
+    update_cache: true
+    name: xorg xorg-server gnome gnome-tweaks
+
+- name: Enable gdm
+  systemd:
+    name: gdm.service
+    state: started
+    enabled: yes
