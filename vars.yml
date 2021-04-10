@@ -1,19 +1,19 @@
 username: nh
 home: /home/{{ username }}
 pacman:
-  base-install:
+  base:
     - xorg
     - xorg-xinit
     - base-devel
     - openssh
     - xf86-video-intel
     - nvidia
-  software-install:
+  install:
     - firefox
     - htop
     - alacritty
     - code
-  software-remove:
+  remove:
     - vi
 git:
   - repo: https://aur.archlinux.org/yay-git.git

@@ -5,8 +5,8 @@
   pacman:
     state: latest
     update_cache: true
-    name: "{{ pacman.software-install }}"
+    name: "{{ pacman.install }}"
 - name: Remove packages
   pacman:
-    name: "{{ pacman.software-remove }}"
+    name: "{{ pacman.remove }}"
     state: absent

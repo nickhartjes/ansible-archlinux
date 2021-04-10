@@ -13,4 +13,4 @@
   pacman:
     state: latest
     update_cache: true
-    name: "{{ pacman.base-install }}"
+    name: "{{ pacman.base }}"
