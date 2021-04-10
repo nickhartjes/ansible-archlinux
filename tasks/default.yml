@@ -8,3 +8,10 @@
     mode: '0755'
     owner: "{{ username }}"
     group: "{{ username }}"
+- include_vars: vars.yml
+- name: Install base pacman packages
+  become: yes
+  pacman:
+    state: latest
+    update_cache: true
+    name: "{{ pacman.base-install }}"

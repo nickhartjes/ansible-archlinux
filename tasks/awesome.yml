@@ -1,0 +1,8 @@
+---
+- include_vars: vars.yml
+- name: Install Awesome packages
+  become: yes
+  pacman:
+    state: latest
+    update_cache: true
+    name: xorg awesome picom nitrogen rofi

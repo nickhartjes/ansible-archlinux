@@ -12,3 +12,4 @@
     - include_tasks: tasks/pacman.yml
     - include_tasks: tasks/git.yml
     - include_tasks: tasks/gnome.yml
+    - include_tasks: tasks/awesome.yml
